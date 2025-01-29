@@ -7,24 +7,13 @@
     "body": {
       "@id": "CIP119:body",
       "@context": {
-        "bio": "CIP119:bio",
-        "email": "CIP119:email",
-        "givenName": "CIP119:givenName",
-        "motivations": "CIP119:motivations",
-        "objectives": "CIP119:objectives",
-        "paymentAddress": "CIP119:paymentAddress",
-        "qualifications": "CIP119:qualifications",
-        "image": {
-          "@id": "CIP119:image",
-          "@context": {
-            "ImageObject": "https://schema.org/ImageObject"
-          }
-        },
         "references": {
           "@id": "CIP119:references",
           "@container": "@set",
           "@context": {
             "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
             "Other": "CIP100:OtherReference",
             "label": "CIP100:reference-label",
             "uri": "CIP100:reference-uri",
@@ -36,7 +25,14 @@
               }
             }
           }
-        }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
       }
     },
     "authors": {
@@ -55,55 +51,18 @@
       }
     }
   },
-  "authors": [
-    {
-      "witness": {
-        "publicKey": {
-          "@value": "a4010103272006215820ed71a9c35fe4f9f83e21f87aeecb2e7e021811fcf3ab535818992ec650ea8a00"
-        },
-        "signature": {
-          "@value": "845829a201276761646472657373581cea6231208f6d775599effb238a67124d9f3c1e4aa021432ad0162535a166686173686564f5581c5ee3bd81c5f7ce96d0bbe5bc22710edb806a51c1ee8c7d802d0f7c245840a1a9c9a764c48d4ca4e20ea350a43e42572b44be2f776c05561faa241d09e8fb6295cb390eea529f20a7e105b3b623ac8f8fe4d8dedb5830ded17ea007e7690a"
-        },
-        "witnessAlgorithm": {
-          "@value": "Ed25519"
-        }
-      }
-    }
-  ],
-  "hashAlgorithm": {
-    "@value": "blake2b-256"
-  },
+  "hashAlgorithm": "blake2b-256",
   "body": {
-    "bio": {
-      "@value": "Empty"
-    },
-    "email": {
-      "@value": "almightyravana@gmail.com"
-    },
-    "givenName": {
-      "@value": "prabath guruge"
-    },
-    "motivations": {
-      "@value": "Empty"
-    },
-    "objectives": {
-      "@value": "Empty"
-    },
-    "paymentAddress": {
-      "@value": "29 Saturn street"
-    },
-    "qualifications": {
-      "@value": "Empty"
-    },
+    "givenName": "Prabath Guruge",
+    "motivations": "I am a true believer in decentralized blockchain governance, I want to be involved and contribute my portion of my share for a better future for Cardano and fairness for all.",
+    "objectives": "I aim to actively engage in Cardano's decentralized governance and open-source ecosystem, contributing to its development and ongoing support and fostering a unified and collaborative Cardano ecosystem. My mission is to promote decentralization where it adds value and to drive meaningful network growth and activity. As a dRep, I aim to make informed decisions that empower the community and enhance Cardano’s potential as a decentralized and efficient platform.",
+    "paymentAddress": "addr1q88tjxyuch30cwug44t7cy2unw4mrafestj8ccem6aqxrjt3vf6pxh3g7962k48gfxgn4scakknta2nh7htdvsvlw76qsjs3qg",
+    "qualifications": "I have been a passionate Cardano blockchain enthusiast since 2017 and an OG NFT enthusiast, collector and Stake pool Operator.",
     "references": [
       {
-        "@type": "Other",
-        "label": {
-          "@value": "Twitter"
-        },
-        "uri": {
-          "@value": "https://x.com/guruge_prabath"
-        }
+        "@type": "Link",
+        "label": "My X ",
+        "uri": "https://x.com/guruge_prabath"
       }
     ]
   }
